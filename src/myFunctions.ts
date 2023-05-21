@@ -1,5 +1,3 @@
-// ./src/myFunctions.ts
-
 import { User } from './types/User';
 
 export const getUserNames = (userList: User[]): string[] => userList.map((user: User) => user.name);
