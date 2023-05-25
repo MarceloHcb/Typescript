@@ -6,7 +6,7 @@ function countBreads(breads: string[]): number {
   
   console.log(countBreads(myBreads));
 
-  function countBreads2(breads: string[]): number {
+  function countBreads2<Type>(breads: Type[] ): number {
     return breads.length;
   }
   
@@ -28,4 +28,4 @@ function countBreads(breads: string[]): number {
   const myBreads2 = [paoDeSal, paoDoce];
   
   // Erro de tipagem! "Argument of type 'CommonBread[]' is not assignable to parameter of type 'string[]'. Type 'CommonBread' is not assignable to type 'string'"
-  console.log(countBreads2(myBreads2));
+  console.log(countBreads2<CommonBread>(myBreads2));
